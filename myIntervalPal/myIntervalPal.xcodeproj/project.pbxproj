@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DD918C0CEC20AA5DE40F7B5 /* Pods_myIntervalPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611ECD74A9A1C0CDCD6AD83 /* Pods_myIntervalPal.framework */; };
+		A21675512258DA79002F987B /* SetDetailTableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21675502258DA79002F987B /* SetDetailTableCellViewController.swift */; };
+		A21675532258F0C1002F987B /* DoWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21675522258F0C1002F987B /* DoWorkoutViewController.swift */; };
+		A2230C9922547A41003DC7BC /* String_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230C9822547A41003DC7BC /* String_Ext.swift */; };
+		A2230C9C22547A85003DC7BC /* ConvertStringToTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230C9B22547A85003DC7BC /* ConvertStringToTimeInterval.swift */; };
+		A2230C9E22547AAB003DC7BC /* ConvertTimerStringsToStringPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230C9D22547AAB003DC7BC /* ConvertTimerStringsToStringPair.swift */; };
+		A2230CA022548AA5003DC7BC /* TimerTableOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2230C9F22548AA5003DC7BC /* TimerTableOnViewController.swift */; };
+		A22939D6225DBFD3004F8429 /* beep_rest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A22939D2225DBFD3004F8429 /* beep_rest.mp3 */; };
+		A22939D7225DBFD3004F8429 /* beep_second.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A22939D3225DBFD3004F8429 /* beep_second.mp3 */; };
+		A22939D8225DBFD3004F8429 /* beep_finish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A22939D4225DBFD3004F8429 /* beep_finish.mp3 */; };
+		A22939D9225DBFD3004F8429 /* beep_work.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A22939D5225DBFD3004F8429 /* beep_work.mp3 */; };
+		A295C02B224B55D900B41919 /* WorkoutTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295C02A224B55D900B41919 /* WorkoutTimer.swift */; };
+		A295C02F224B5E0F00B41919 /* RestingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295C02E224B5E0F00B41919 /* RestingTimer.swift */; };
+		A2EB960F224A4560005F13F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB960E224A4560005F13F4 /* AppDelegate.swift */; };
+		A2EB9614224A4560005F13F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB9612224A4560005F13F4 /* Main.storyboard */; };
+		A2EB9616224A4562005F13F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EB9615224A4562005F13F4 /* Assets.xcassets */; };
+		A2EB9619224A4562005F13F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB9617224A4562005F13F4 /* LaunchScreen.storyboard */; };
+		A2EB9621224A45D7005F13F4 /* workoutTimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EB9620224A45D7005F13F4 /* workoutTimer.xib */; };
+		A2EB9623224A4844005F13F4 /* restingTimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EB9622224A4844005F13F4 /* restingTimer.xib */; };
+		A2EB9625224A503D005F13F4 /* TimerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB9624224A503D005F13F4 /* TimerCellTableViewCell.swift */; };
+		A2EB9627224A69EB005F13F4 /* SetTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB9626224A69EB005F13F4 /* SetTimer.swift */; };
+		A2EB9629224A6ABC005F13F4 /* TimerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB9628224A6ABC005F13F4 /* TimerTableViewController.swift */; };
+		A2EB962F224CFF33005F13F4 /* WorkoutTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB962E224CFF33005F13F4 /* WorkoutTimerCell.swift */; };
+		A2EB9631224CFF50005F13F4 /* RestingTimerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB9630224CFF50005F13F4 /* RestingTimerCell.swift */; };
+		A2F894FE225CCC4F0053AE36 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F894FD225CCC4E0053AE36 /* TimerState.swift */; };
+		A2F89500225DEDE80053AE36 /* initialTimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F894FF225DEDE80053AE36 /* initialTimer.xib */; };
+		A2F89502225DEE280053AE36 /* InitialTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F89501225DEE280053AE36 /* InitialTimer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5611ECD74A9A1C0CDCD6AD83 /* Pods_myIntervalPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myIntervalPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21675502258DA79002F987B /* SetDetailTableCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailTableCellViewController.swift; sourceTree = "<group>"; };
+		A21675522258F0C1002F987B /* DoWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoWorkoutViewController.swift; sourceTree = "<group>"; };
+		A2230C9822547A41003DC7BC /* String_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_Ext.swift; sourceTree = "<group>"; };
+		A2230C9B22547A85003DC7BC /* ConvertStringToTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertStringToTimeInterval.swift; sourceTree = "<group>"; };
+		A2230C9D22547AAB003DC7BC /* ConvertTimerStringsToStringPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertTimerStringsToStringPair.swift; sourceTree = "<group>"; };
+		A2230C9F22548AA5003DC7BC /* TimerTableOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableOnViewController.swift; sourceTree = "<group>"; };
+		A22939D2225DBFD3004F8429 /* beep_rest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_rest.mp3; sourceTree = "<group>"; };
+		A22939D3225DBFD3004F8429 /* beep_second.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_second.mp3; sourceTree = "<group>"; };
+		A22939D4225DBFD3004F8429 /* beep_finish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_finish.mp3; sourceTree = "<group>"; };
+		A22939D5225DBFD3004F8429 /* beep_work.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_work.mp3; sourceTree = "<group>"; };
+		A295C02A224B55D900B41919 /* WorkoutTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimer.swift; sourceTree = "<group>"; };
+		A295C02E224B5E0F00B41919 /* RestingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestingTimer.swift; sourceTree = "<group>"; };
+		A2EB960B224A4560005F13F4 /* myIntervalPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myIntervalPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EB960E224A4560005F13F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2EB9613224A4560005F13F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2EB9615224A4562005F13F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2EB9618224A4562005F13F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2EB961A224A4562005F13F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EB9620224A45D7005F13F4 /* workoutTimer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = workoutTimer.xib; sourceTree = "<group>"; };
+		A2EB9622224A4844005F13F4 /* restingTimer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = restingTimer.xib; sourceTree = "<group>"; };
+		A2EB9624224A503D005F13F4 /* TimerCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCellTableViewCell.swift; sourceTree = "<group>"; };
+		A2EB9626224A69EB005F13F4 /* SetTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimer.swift; sourceTree = "<group>"; };
+		A2EB9628224A6ABC005F13F4 /* TimerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewController.swift; sourceTree = "<group>"; };
+		A2EB962E224CFF33005F13F4 /* WorkoutTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerCell.swift; sourceTree = "<group>"; };
+		A2EB9630224CFF50005F13F4 /* RestingTimerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestingTimerCell.swift; sourceTree = "<group>"; };
+		A2F894FD225CCC4E0053AE36 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		A2F894FF225DEDE80053AE36 /* initialTimer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = initialTimer.xib; sourceTree = "<group>"; };
+		A2F89501225DEE280053AE36 /* InitialTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTimer.swift; sourceTree = "<group>"; };
+		AD692C40B6B02321C382B8C2 /* Pods-myIntervalPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myIntervalPal.release.xcconfig"; path = "Target Support Files/Pods-myIntervalPal/Pods-myIntervalPal.release.xcconfig"; sourceTree = "<group>"; };
+		EEB43823D7575E9843362D3F /* Pods-myIntervalPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myIntervalPal.debug.xcconfig"; path = "Target Support Files/Pods-myIntervalPal/Pods-myIntervalPal.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2EB9608224A4560005F13F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DD918C0CEC20AA5DE40F7B5 /* Pods_myIntervalPal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F12E00FCAA002F5EC67848A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5611ECD74A9A1C0CDCD6AD83 /* Pods_myIntervalPal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5F9FB575394A3851C1600D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEB43823D7575E9843362D3F /* Pods-myIntervalPal.debug.xcconfig */,
+				AD692C40B6B02321C382B8C2 /* Pods-myIntervalPal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2230C9722547A2B003DC7BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2230C9822547A41003DC7BC /* String_Ext.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A2230C9A22547A4B003DC7BC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A2230C9B22547A85003DC7BC /* ConvertStringToTimeInterval.swift */,
+				A2230C9D22547AAB003DC7BC /* ConvertTimerStringsToStringPair.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A22939CD225D9767004F8429 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A22939D4225DBFD3004F8429 /* beep_finish.mp3 */,
+				A22939D2225DBFD3004F8429 /* beep_rest.mp3 */,
+				A22939D3225DBFD3004F8429 /* beep_second.mp3 */,
+				A22939D5225DBFD3004F8429 /* beep_work.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		A2EB9602224A4560005F13F4 = {
+			isa = PBXGroup;
+			children = (
+				A2EB960D224A4560005F13F4 /* myIntervalPal */,
+				A2EB960C224A4560005F13F4 /* Products */,
+				7A5F9FB575394A3851C1600D /* Pods */,
+				6F12E00FCAA002F5EC67848A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2EB960C224A4560005F13F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB960B224A4560005F13F4 /* myIntervalPal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2EB960D224A4560005F13F4 /* myIntervalPal */ = {
+			isa = PBXGroup;
+			children = (
+				A2230C9722547A2B003DC7BC /* Extensions */,
+				A2230C9A22547A4B003DC7BC /* Services */,
+				A2EB9628224A6ABC005F13F4 /* TimerTableViewController.swift */,
+				A22939CD225D9767004F8429 /* Sounds */,
+				A2F894FC225CCC270053AE36 /* State */,
+				A21675522258F0C1002F987B /* DoWorkoutViewController.swift */,
+				A2EB9626224A69EB005F13F4 /* SetTimer.swift */,
+				A21675502258DA79002F987B /* SetDetailTableCellViewController.swift */,
+				A2EB960E224A4560005F13F4 /* AppDelegate.swift */,
+				A2EB962E224CFF33005F13F4 /* WorkoutTimerCell.swift */,
+				A2230C9F22548AA5003DC7BC /* TimerTableOnViewController.swift */,
+				A2EB9630224CFF50005F13F4 /* RestingTimerCell.swift */,
+				A2EB962D224CEFEB005F13F4 /* TimerXib */,
+				A2EB9612224A4560005F13F4 /* Main.storyboard */,
+				A2EB9615224A4562005F13F4 /* Assets.xcassets */,
+				A2EB9617224A4562005F13F4 /* LaunchScreen.storyboard */,
+				A2EB9624224A503D005F13F4 /* TimerCellTableViewCell.swift */,
+				A2EB961A224A4562005F13F4 /* Info.plist */,
+			);
+			path = myIntervalPal;
+			sourceTree = "<group>";
+		};
+		A2EB962D224CEFEB005F13F4 /* TimerXib */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB9620224A45D7005F13F4 /* workoutTimer.xib */,
+				A295C02A224B55D900B41919 /* WorkoutTimer.swift */,
+				A2F894FF225DEDE80053AE36 /* initialTimer.xib */,
+				A2F89501225DEE280053AE36 /* InitialTimer.swift */,
+				A2EB9622224A4844005F13F4 /* restingTimer.xib */,
+				A295C02E224B5E0F00B41919 /* RestingTimer.swift */,
+			);
+			name = TimerXib;
+			sourceTree = "<group>";
+		};
+		A2F894FC225CCC270053AE36 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				A2F894FD225CCC4E0053AE36 /* TimerState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2EB960A224A4560005F13F4 /* myIntervalPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EB961D224A4562005F13F4 /* Build configuration list for PBXNativeTarget "myIntervalPal" */;
+			buildPhases = (
+				761A87CA499F8D8A9065ADF0 /* [CP] Check Pods Manifest.lock */,
+				A2EB9607224A4560005F13F4 /* Sources */,
+				A2EB9608224A4560005F13F4 /* Frameworks */,
+				A2EB9609224A4560005F13F4 /* Resources */,
+				9C971B59037783F836A5D441 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myIntervalPal;
+			productName = myIntervalPal;
+			productReference = A2EB960B224A4560005F13F4 /* myIntervalPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2EB9603224A4560005F13F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = alexHu;
+				TargetAttributes = {
+					A2EB960A224A4560005F13F4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A2EB9606224A4560005F13F4 /* Build configuration list for PBXProject "myIntervalPal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2EB9602224A4560005F13F4;
+			productRefGroup = A2EB960C224A4560005F13F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2EB960A224A4560005F13F4 /* myIntervalPal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2EB9609224A4560005F13F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB9619224A4562005F13F4 /* LaunchScreen.storyboard in Resources */,
+				A22939D8225DBFD3004F8429 /* beep_finish.mp3 in Resources */,
+				A2F89500225DEDE80053AE36 /* initialTimer.xib in Resources */,
+				A2EB9621224A45D7005F13F4 /* workoutTimer.xib in Resources */,
+				A2EB9616224A4562005F13F4 /* Assets.xcassets in Resources */,
+				A22939D9225DBFD3004F8429 /* beep_work.mp3 in Resources */,
+				A2EB9614224A4560005F13F4 /* Main.storyboard in Resources */,
+				A22939D7225DBFD3004F8429 /* beep_second.mp3 in Resources */,
+				A22939D6225DBFD3004F8429 /* beep_rest.mp3 in Resources */,
+				A2EB9623224A4844005F13F4 /* restingTimer.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		761A87CA499F8D8A9065ADF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myIntervalPal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C971B59037783F836A5D441 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myIntervalPal/Pods-myIntervalPal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myIntervalPal/Pods-myIntervalPal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2EB9607224A4560005F13F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB9625224A503D005F13F4 /* TimerCellTableViewCell.swift in Sources */,
+				A2EB9629224A6ABC005F13F4 /* TimerTableViewController.swift in Sources */,
+				A295C02F224B5E0F00B41919 /* RestingTimer.swift in Sources */,
+				A2EB9627224A69EB005F13F4 /* SetTimer.swift in Sources */,
+				A2230CA022548AA5003DC7BC /* TimerTableOnViewController.swift in Sources */,
+				A295C02B224B55D900B41919 /* WorkoutTimer.swift in Sources */,
+				A2EB9631224CFF50005F13F4 /* RestingTimerCell.swift in Sources */,
+				A2230C9E22547AAB003DC7BC /* ConvertTimerStringsToStringPair.swift in Sources */,
+				A2F89502225DEE280053AE36 /* InitialTimer.swift in Sources */,
+				A2230C9922547A41003DC7BC /* String_Ext.swift in Sources */,
+				A2EB962F224CFF33005F13F4 /* WorkoutTimerCell.swift in Sources */,
+				A2EB960F224A4560005F13F4 /* AppDelegate.swift in Sources */,
+				A21675532258F0C1002F987B /* DoWorkoutViewController.swift in Sources */,
+				A21675512258DA79002F987B /* SetDetailTableCellViewController.swift in Sources */,
+				A2F894FE225CCC4F0053AE36 /* TimerState.swift in Sources */,
+				A2230C9C22547A85003DC7BC /* ConvertStringToTimeInterval.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2EB9612224A4560005F13F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EB9613224A4560005F13F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2EB9617224A4562005F13F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EB9618224A4562005F13F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2EB961B224A4562005F13F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2EB961C224A4562005F13F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2EB961E224A4562005F13F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEB43823D7575E9843362D3F /* Pods-myIntervalPal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = myIntervalPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.studio.alexhu.myIntervalPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2EB961F224A4562005F13F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD692C40B6B02321C382B8C2 /* Pods-myIntervalPal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = myIntervalPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.studio.alexhu.myIntervalPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2EB9606224A4560005F13F4 /* Build configuration list for PBXProject "myIntervalPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB961B224A4562005F13F4 /* Debug */,
+				A2EB961C224A4562005F13F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EB961D224A4562005F13F4 /* Build configuration list for PBXNativeTarget "myIntervalPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB961E224A4562005F13F4 /* Debug */,
+				A2EB961F224A4562005F13F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2EB9603224A4560005F13F4 /* Project object */;
+}

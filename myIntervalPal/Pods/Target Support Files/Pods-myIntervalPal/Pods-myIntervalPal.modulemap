@@ -1,0 +1,6 @@
+framework module Pods_myIntervalPal {
+  umbrella header "Pods-myIntervalPal-umbrella.h"
+
+  export *
+  module * { export * }
+}

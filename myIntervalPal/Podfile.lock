@@ -1,0 +1,20 @@
+PODS:
+  - SwiftyTimer (2.1.0)
+  - UICircularProgressRing (6.1.0)
+
+DEPENDENCIES:
+  - SwiftyTimer
+  - UICircularProgressRing
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftyTimer
+    - UICircularProgressRing
+
+SPEC CHECKSUMS:
+  SwiftyTimer: 02dd6cf10cbc71cbf67cec494f6e5eb782102543
+  UICircularProgressRing: b3eba859a515e4d9d38503eec913f09c28450785
+
+PODFILE CHECKSUM: 13d09e88e9f72222f9797396d8598d09f12b34d2
+
+COCOAPODS: 1.6.1
